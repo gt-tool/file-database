@@ -4,7 +4,7 @@ package net.gt;
  * 类描述
  *
  * @author gt-it
- * @since ${DATE}
+ * @since 2022-12-12
  */
 public class Main {
     public static void main(String[] args) {

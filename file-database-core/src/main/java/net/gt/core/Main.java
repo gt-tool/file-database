@@ -1,4 +1,4 @@
-package net.gt;
+package net.gt.core;
 
 /**
  * 类描述
