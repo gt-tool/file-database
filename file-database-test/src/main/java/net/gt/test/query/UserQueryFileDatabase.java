@@ -1,7 +1,7 @@
 package net.gt.test.query;
 
 import net.gt.core.api.QueryFileDatabase;
-import net.gt.test.User;
+import net.gt.test.entity.User;
 import org.springframework.stereotype.Component;
 
 /**

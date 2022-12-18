@@ -2,7 +2,7 @@ package net.gt.core.api;
 
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONException;
-import net.gt.core.exception.DataFormatException;
+import net.gt.core.exception.FileDatabaseException;
 import net.gt.core.util.FileUtils;
 import org.apache.commons.collections.CollectionUtils;
 
@@ -29,7 +29,7 @@ public class QueryFileDatabase<T> {
         try {
             objects = JSON.parseArray(fileInfo, clazz);
         } catch (JSONException e) {
-            throw new DataFormatException(e.getMessage());
+            throw new FileDatabaseException(e.getMessage());
         }
         if (CollectionUtils.isNotEmpty(objects)) {
             return objects.get(0);
@@ -45,7 +45,7 @@ public class QueryFileDatabase<T> {
         try {
             list = JSON.parseArray(fileInfo, clazz);
         } catch (JSONException e) {
-            throw new DataFormatException(e.getMessage());
+            throw new FileDatabaseException(e.getMessage());
         }
         return list;
     }

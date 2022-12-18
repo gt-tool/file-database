@@ -12,7 +12,6 @@
     <modules>
         <module>file-database-core</module>
         <module>file-database-spring-boot-starter</module>
-        <module>file-database-test</module>
     </modules>
 
     <properties>
