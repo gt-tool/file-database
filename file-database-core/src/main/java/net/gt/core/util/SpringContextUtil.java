@@ -1,14 +1,17 @@
 package net.gt.core.util;
 
-import lombok.Setter;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
+
 /**
- * @author xupengan
- * @date 2022/7/21
+ * SpringBean工具
+ *
+ * @author gt-it
+ * @version 0.0.1
+ * @since 2023/01/17
  */
 @Component
 public class SpringContextUtil implements ApplicationContextAware {
