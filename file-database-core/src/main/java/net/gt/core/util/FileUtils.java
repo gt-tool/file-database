@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.*;
 
 /**
- * 类描述
+ * 文件工具类
  *
  * @author gt-it
  * @since 2022/12/13
