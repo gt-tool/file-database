@@ -6,7 +6,7 @@
     <parent>
         <groupId>net.gt</groupId>
         <artifactId>file-database</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>net.gt</groupId>
             <artifactId>file-database-spring-boot-starter</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
