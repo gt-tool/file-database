@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2023/01/17
  */
 
-@SpringBootApplication(scanBasePackages = {"net.gt.spring.boot.test.filedao"})
+@SpringBootApplication
 public class TestApplication {
 
     public static void main(String[] args) {

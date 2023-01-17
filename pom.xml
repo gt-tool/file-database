@@ -13,7 +13,7 @@
         <module>file-database-core</module>
         <module>file-database-spring-boot-starter</module>
         <module>file-database-test</module>
-        <module>file-database-test/file-database-spring-boot-test</module>
+<!--        <module>file-database-test/file-database-spring-boot-test</module>-->
     </modules>
 
     <properties>

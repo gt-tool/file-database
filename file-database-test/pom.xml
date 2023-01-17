@@ -9,7 +9,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <packaging>pom</packaging>
+
     <artifactId>file-database-test</artifactId>
+
+
+    <modules>
+        <module>file-database-spring-boot-test</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

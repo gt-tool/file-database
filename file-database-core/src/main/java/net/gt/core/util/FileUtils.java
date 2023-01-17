@@ -2,6 +2,7 @@ package net.gt.core.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import net.gt.core.config.FileDatabaseProperties;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
@@ -15,14 +16,15 @@ import java.io.*;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class FileUtils {
 
-    private static final String PATH = "/Users/jason/company/gt/project/JavaProject/file-database/file-database-test/src/main/resources/static/";
+    private static final FileDatabaseProperties FILE_DATABASE_PROPERTIES = SpringContextUtil.getBean(FileDatabaseProperties.class);
 
+    private static final String DATA_PATH = FILE_DATABASE_PROPERTIES.getDataPath();
 
     public static String getFileInfo(String fileName) {
         if (null == fileName) {
             throw new NullPointerException("fileName can not be null!");
         }
-        return getFileInfo(new File(PATH + fileName));
+        return getFileInfo(new File(DATA_PATH + fileName));
     }
 
     public static String getFileInfo(File file) {
@@ -39,7 +41,7 @@ public final class FileUtils {
     }
 
     public static void saveFile(String fileInfo) {
-        saveFile(PATH, null, fileInfo);
+        saveFile(DATA_PATH, null, fileInfo);
     }
 
     public static void saveFile(String filePath, String fileName, String fileInfo) {
