@@ -31,6 +31,13 @@
             <version>${boot.version}</version>
             <optional>true</optional>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${boot.version}</version>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
 </project>

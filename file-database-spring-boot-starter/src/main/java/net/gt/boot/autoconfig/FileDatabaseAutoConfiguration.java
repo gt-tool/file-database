@@ -1,6 +1,7 @@
 package net.gt.boot.autoconfig;
 
 import net.gt.core.config.FileDatabaseProperties;
+import net.gt.core.mapper.BaseFileMapper;
 import net.gt.core.mapper.impl.BaseFileMapperImpl;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +19,7 @@ public class FileDatabaseAutoConfiguration {
 
     @Primary
     @Bean
-    public <T> BaseFileMapperImpl<T> getBaseMapperFileMapper() {
+    public <T> BaseFileMapper<T> getBaseMapperFileMapper() {
         return new BaseFileMapperImpl<>();
     }
 
