@@ -27,6 +27,8 @@ public @interface FileMapperScan {
     @AliasFor("value")
     String[] basePackages() default {};
 
+    Class<?>[] basePackageClasses() default {};
+
     Class<? extends Annotation> annotationClass() default Annotation.class;
 
     String defaultScope() default AbstractBeanDefinition.SCOPE_DEFAULT;

@@ -1,6 +1,7 @@
 package net.gt.spring.boot.test;
 
 
+import net.gt.core.annotations.FileMapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2023/01/17
  */
 
-//@FileMapperScan("net.gt.spring.boot.test.filedao")
+@FileMapperScan("net.gt.spring.boot.test.filedao")
 @SpringBootApplication
 public class TestApplication {
 
@@ -21,3 +22,4 @@ public class TestApplication {
     }
 
 }
+

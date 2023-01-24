@@ -1,4 +1,4 @@
-package net.gt.inter.test.handler;
+package net.gt.core.mapper;
 
 import com.alibaba.fastjson2.JSON;
 
@@ -11,10 +11,10 @@ import java.lang.reflect.Method;
  * @author lichuang
  */
 
-public class ServiceProxy<T> implements InvocationHandler {
+public class FileMapperProxy<T> implements InvocationHandler {
     private final Class<T> interfaceType;
 
-    public ServiceProxy(Class<T> interfaceType) {
+    public FileMapperProxy(Class<T> interfaceType) {
         this.interfaceType = interfaceType;
     }
 

@@ -1,4 +1,4 @@
-package net.gt.core.bean;//package net.gt.core.bean;
+//package net.gt.core.bean;
 //
 //import net.gt.core.annotations.FileMapperScan;
 //import net.gt.core.annotations.FileMapperScans;
