@@ -95,7 +95,6 @@ public class FileMapperScannerConfigurer implements BeanDefinitionRegistryPostPr
     private Environment getEnvironment() {
         return applicationContext.getEnvironment();
     }*/
-
     public String getBasePackage() {
         return basePackage;
     }
