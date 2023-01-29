@@ -29,7 +29,7 @@ import java.util.Set;
 /**
  * 用于Spring动态注入自定义接口
  *
- * @author lichuang
+ * @author jason
  */
 @Component
 public class ServiceBeanDefinitionRegistry implements BeanDefinitionRegistryPostProcessor, ResourceLoaderAware, ApplicationContextAware {

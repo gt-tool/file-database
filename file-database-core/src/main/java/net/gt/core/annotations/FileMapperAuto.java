@@ -1,8 +1,5 @@
 package net.gt.core.annotations;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-
 /**
  * 类描述
  *
