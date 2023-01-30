@@ -1,7 +1,9 @@
 package net.gt.spring.boot.test.service.impl;
 
+import net.gt.core.param.QueryParam;
 import net.gt.spring.boot.test.filedao.UserFileDao;
 import net.gt.spring.boot.test.pojo.UserPO;
+import net.gt.spring.boot.test.pojo.UserPO1;
 import net.gt.spring.boot.test.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +29,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserPO getOneUser() {
-        UserPO user = userFileDao.selectOne();
+        QueryParam<UserPO> objectQueryParam = new QueryParam<>(UserPO.class);
+        UserPO user = userFileDao.selectOne(objectQueryParam);
         logger.debug(user.toString());
         return user;
     }

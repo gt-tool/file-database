@@ -1,5 +1,7 @@
 package net.gt.core.mapper;
 
+import net.gt.core.param.QueryParam;
+
 import java.util.List;
 
 /**
@@ -54,6 +56,6 @@ public interface BaseFileMapper<T> extends FileMapper<T> {
      *
      * @return 记录
      */
-    T selectOne();
+    T selectOne(QueryParam<T> queryParam);
 
 }

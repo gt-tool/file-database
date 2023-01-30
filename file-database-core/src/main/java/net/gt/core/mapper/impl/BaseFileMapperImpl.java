@@ -1,9 +1,12 @@
 package net.gt.core.mapper.impl;
 
 import net.gt.core.mapper.BaseFileMapper;
+import net.gt.core.param.QueryParam;
 import net.gt.core.util.ClassUtil;
 import org.springframework.stereotype.Component;
 
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.List;
 
 /**
@@ -40,10 +43,10 @@ public class BaseFileMapperImpl<T> implements BaseFileMapper<T> {
     }
 
     @Override
-    public T selectOne() {
-        Class<?> aClass = ClassUtil.extractModelClass(this.getClass());
+    public T selectOne(QueryParam<T> queryParam) {
+//        Class<?> aClass = ClassUtil.extractModelClass(queryParam.getClass());
         try {
-            return (T) aClass.newInstance();
+            return (T) queryParam.getClazz().newInstance();
         } catch (InstantiationException e) {
             throw new RuntimeException(e);
         } catch (IllegalAccessException e) {

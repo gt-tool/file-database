@@ -1,7 +1,6 @@
 package net.gt.spring.boot.test.config;
 
 import net.gt.core.mapper.FileMapper;
-import net.gt.core.mapper.impl.BaseFileMapperImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,9 +14,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FileDatabaseConfig<T> {
 
-    @Bean
-    public FileMapper<T> getFileMapper() {
-        return new BaseFileMapperImpl<>();
-    }
+//    @Bean
+//    public FileMapper<T> getFileMapper() {
+//        return new BaseFileMapperImpl<>();
+//    }
 
 }
