@@ -1,7 +1,5 @@
 package net.gt.spring.boot.test.config;
 
-import net.gt.core.mapper.FileMapper;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**

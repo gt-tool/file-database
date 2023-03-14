@@ -3,7 +3,6 @@ package net.gt.spring.boot.test.service.impl;
 import net.gt.core.param.QueryParam;
 import net.gt.spring.boot.test.filedao.UserFileDao;
 import net.gt.spring.boot.test.pojo.UserPO;
-import net.gt.spring.boot.test.pojo.UserPO1;
 import net.gt.spring.boot.test.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

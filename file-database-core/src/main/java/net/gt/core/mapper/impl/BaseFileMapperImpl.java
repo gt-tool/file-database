@@ -2,11 +2,8 @@ package net.gt.core.mapper.impl;
 
 import net.gt.core.mapper.BaseFileMapper;
 import net.gt.core.param.QueryParam;
-import net.gt.core.util.ClassUtil;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.List;
 
 /**
