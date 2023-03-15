@@ -13,6 +13,15 @@ import java.lang.reflect.Type;
  */
 public class ClassUtil {
 
+    private ClassUtil() {
+    }
+
+    /**
+     * 获取类/接口上的泛型
+     *
+     * @param mapperClass 类/接口
+     * @return 泛型Class
+     */
     public static Class<?> extractModelClass(Class<?> mapperClass) {
         Type[] types = mapperClass.getGenericInterfaces();
         ParameterizedType target = null;
